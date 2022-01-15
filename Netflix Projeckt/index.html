@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Projekt</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Open+Sans:wght@300;800&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-image: url(background_image.jpg);
+        background-color: rgba(red, green, blue, alpha);
+        background-size: cover;
+        
+      }
+      form {
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.85);
+        width: 300px;
+        margin: 0px auto;
+        padding: 0px auto;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Mochiy Pop P One", sans-serif;
+        font-family: "Open Sans", sans-serif;
+        font-family: "Titan One", cursive;
+      }
+      p {
+        text-align: center;
+        color: white;
+      }
+      .box {
+        color: white;
+        margin: 10px;
+      }
+      #submit {
+        background-color: red;
+        color: white;
+        border: 3px solid red;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        width: 100px;
+        
+
+        
+
+      }
+      #Name {
+        border: 2px solid black ;
+        
+      }
+      #a {
+        
+      }
+      #boxz {
+        border: 2px;
+        border-color: black;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="boxz">
+      <h1 style="color: white">NET<span style="color: red">FLIX</span></h1>
+      <p>Thank you for signing up at Netflix. Tell us more about yourself</p>
+
+      <form action="" id="survey-form">
+        <div class="box">
+          <label for="Name" id="a">Name</label>
+          <br />
+          <input
+            style="width:270px; height:40px"            
+            type="text"
+            name="name"
+            id="Name"
+            placeholder="Enter your name"
+            
+          />
+        </div>
+
+        <div class="box">
+          <label for="Alt" id="a">Age</label>
+          <br />
+          <input style="width:270px; height:40px" type="text" name="age" id="Alt" placeholder="Age" />
+        </div>
+
+        <div class="box">
+          <label for="E-Mail" id="a">Email</label>
+          <br />
+          <input
+          style="width:270px; height:40px"
+            type="email"
+            name="mail"
+            id="E-Mail"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="box">
+          <label for="Inhalt" id="a">Content Type</label>
+          <br />
+          <select style="width:270px; height:30px" name="content" id="Inhalt">
+            <option value="series" selected>Series</option>
+            <option value="films">Films</option>
+            <option value="animations">Animations</option>
+            <option value="documentariest">Documentariest</option>
+          </select>
+        </div>
+
+        <div class="box">
+          <label for="Typ" id="a">Movie type </label><br />
+          <input type="checkbox" name="type" id="comedy" />
+          <label for="comedy">Comedy</label><br />
+          <input type="checkbox" name="type" id="action" />
+          <label for="action">Action</label><br />
+          <input type="checkbox" name="type" id="romance" />
+          <label for="romance">Romance</label><br />
+        </div>
+
+        <div class="box">
+          <label for="gender" id="a">Gender</label><br />
+          <input type="radio" name="gender" id="Mann" />
+          <label for="Mann">Male</label><br />
+          <input type="radio" name="gender" id="Frau" />
+          <label for="Frau">Female</label><br />
+          <input type="radio" name="gender" id="Andere" />
+          <label for="Andere">Other</label>
+        </div>
+
+        <div class="box">
+          <label for="textarea" id="a">Feed back</label><br />
+          <textarea
+            style="resize: none"
+            name="area"
+            id="textarea"
+            cols="35"
+            rows="5"
+            placeholder="Any comment"
+          ></textarea>
+        </div>
+
+        <div>
+          <input style="margin-left: 30%;" type="submit" id="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
